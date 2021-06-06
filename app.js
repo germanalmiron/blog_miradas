@@ -6,8 +6,8 @@ const app = express();
 app.use(express.static('public'));
 
 // Iniciar servidor
-app.listen(3000, () => {
-    console.log('Servidor iniciando');
+app.listen(process.env.PORT || 3000, () => {
+    console.log('Servidor escuchando en el puerto 3000');
 });
 
 
